@@ -10,12 +10,16 @@ public class Samsung implements Phones {
 	@Autowired
 	@Qualifier("qualcomm")
 	Processor mobileProcessor;
+	
+	
 
 	public Dailer openDialer() {
 		return new Dailer();
+		
 	}
 
 	public void callNumber(String numberToCall) {
+		System.out.println(category);
 		this.mobileProcessor.process();
 	}
 
